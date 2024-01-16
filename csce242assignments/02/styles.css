@@ -5,7 +5,7 @@ body {
 
 /* structure */ 
 #content {
-    background: #CEC0F1; /* aka: white */
+    background: #CEC0F1; 
     padding: 10px;
     width: 80%; /* width of div across page*/
     margin: auto; /* center horizontally */
@@ -15,7 +15,7 @@ body {
 /* Navigation */
 #main-nav a {
     text-decoration: none; /* removes underline */
-    background: #FBF0D4; /* aka: white */
+    background: #FBF0D4; 
     padding: 5px;
     border-radius: 5px; /* will round corners a little bit */
     color: #B0307E;
