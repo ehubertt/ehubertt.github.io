@@ -1,0 +1,54 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: url(images/beach.jpg);
+}
+
+/* structure */ 
+#content {
+    background: #CEC0F1; /* aka: white */
+    padding: 10px;
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 5px; /* will round corners a little bit */
+}
+
+/* Navigation */
+#main-nav a {
+    text-decoration: none; /* removes underline */
+    background: #FBF0D4; /* aka: white */
+    padding: 5px;
+    border-radius: 5px; /* will round corners a little bit */
+    color: #B0307E;
+}
+
+#main-nav a:hover {
+    background: #fff;
+}
+
+img {
+    border: 5px solid #FA6885;
+    padding: 5px;
+    border-radius: 5px;
+}
+table, th, td {
+    border: 1px solid #251669;
+    padding: 7px;
+    border-radius: 5px;
+    background: #ED9AC9;
+}
+
+
+/* Typography */
+
+h1 {
+    color: #251669;
+}
+h2 {
+    color: #FA6885;
+}
+.text {
+    color: #21116D;
+}
+.text1 {
+    color: #21116D;
+}

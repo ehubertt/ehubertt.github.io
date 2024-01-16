@@ -1,0 +1,37 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: url(images/icecream.jpg);
+}
+
+/* structure */ 
+#content {
+    background: #fff; /* aka: white */
+    padding: 5px;
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 5px; /* will round corners a little bit */
+}
+
+/* Navigation */
+#main-nav a {
+    text-decoration: none; /* removes underline */
+    background: lightgray; /* aka: white */
+    padding: 5px;
+    border-radius: 5px; /* will round corners a little bit */
+    color: palevioletred;
+}
+
+#main-nav a:hover {
+    background: deeppink;
+}
+
+
+/* Typography */
+
+h1 {
+    color: dimgrey;
+}
+
+.special {
+    color: deepskyblue;
+}

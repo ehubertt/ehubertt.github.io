@@ -1,0 +1,39 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(images/wallpaper.jpg);
+}
+
+/* structure */ 
+#content {
+    text-decoration: none;
+    background: #FAD79E; /* aka: white */
+    padding: 5px;
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 5px; /* will round corners a little bit */
+}
+
+/* Navigation */
+#main-nav a {
+    text-decoration: none;
+    color: #FBA14C;
+    background: #FDF1BF;
+    padding: 5px;
+    border-radius: 5px;
+}
+#main-nav a:hover {
+    background:#fff;
+}
+
+
+/* Typography */
+
+h1 {
+    color: #FE809D;
+}
+h3 {
+    color: #FF9EA7;
+}
+.description {
+    color: #FF8A66;
+}
