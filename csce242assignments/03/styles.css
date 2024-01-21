@@ -1,0 +1,134 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: #F2E8DF;
+}
+
+/* structure */ 
+#content {
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 5px; /* will round corners a little bit */
+}
+#main-content {
+    background: #FEFFD9;
+}
+
+
+/*Main Navigation*/
+#main-nav ul {
+    /*remove list indent */
+    padding-left: 0;
+}
+#main-nav li {
+    list-style-type: none;
+    background: #F28585;
+    padding: 5px;
+    border-bottom: 1px solid #302F2F;
+    border: 1px solid #302F2F;
+}
+#main-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main Content */
+
+#main-content ul {
+    padding-left: 0;
+}
+#main-content li {
+    list-style-type: none;
+    text-align: left;
+}
+#main-content a {
+    
+    color: #F28585;
+}
+.columns section {
+    border: 1px solid #86A69D;
+}
+.images {
+    text-align: center;
+    background: #86A69D;
+    margin: auto;
+    padding: 5px;
+}
+#main-footer {
+    text-align: center;
+    color:#86A69D;
+}
+
+/* Typography */
+
+h1 {
+    color: #86A69D;
+    text-align: center;
+}
+h2 {
+    color:#86A69D;
+    margin: 5px;
+}
+.columns{
+    color:#86A69D;
+}
+.images {
+    color: #fff;
+}
+
+/* For larger resolutions */
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+    .images {
+        display: flex;
+    }
+    .one,
+    #main-nav li {
+        flex: 1;
+    }
+    #main-nav li {
+        text-align: center;
+        padding: 2px solid #302F2F;
+        margin: auto;
+    }
+    #main-nav li:hover {
+        border-bottom: 2px solid #302F2F;
+    }
+    .columns section{
+        padding: 5px;
+        max-width: 80%;
+        border: 1px solid #86A69D
+    }
+    #main-content li {
+        flex: 1;
+    }
+    #main-content li {
+        text-align: left;
+    }
+    .columns {
+        display: flex;
+    }
+    .image {
+        margin: 2px;
+    }
+}
+
+/* For smaller resolutions */
+@media only screen and (max-width: 768px) {
+    .images {
+        text-align: center;
+    }
+    #main-content ul{
+        margin-left: 20px;;
+    }
+    #main-nav li {
+        text-align: center
+    }
+    .image {
+        text-align: center
+    }
+    .text {
+        text-align: center
+    }
+}

@@ -2,30 +2,48 @@
 <html>
 
 <head>
+    <!--Author: Emma Hubert-->
     <title>Emma Hubert Home</title>
     <link rel="stylesheet" href = "styles.css">
 </head>
 
 <body>
     <div id="content">
-
-        <h1>CSCE 242 Section 001</h1>
-         <h3>Emma Hubert</h3>
-         <p class = "description">In this course we will be learning to 
-            use HTML and CSS to create and design webpages.
-            We will also be learning how to use JavaScript to increase 
-            funtionality and utilize node and server side
-            to store and retrieve data from  a server.
-        </p>
-        <h2>Assignments</h2>
-        <nav id="main-nav">
-            <ul>
-                <li><a href = "csce242assignments/01/index.html">01</a> </li>
-                <li><a href = "csce242assignments/02/index.html">02</a> </li>
-            </ul>  
-        </nav>
+        <header id = "main-header">
+            <h1>CSCE 242 Section 001</h1>
+            <h3>Emma Hubert</h3>
+            <p class = "description">In this course we will be learning to 
+                use HTML and CSS to create and design webpages.
+                We will also be learning how to use JavaScript to increase 
+                funtionality and utilize node and server side
+                to store and retrieve data from  a server.
+            </p>
+            <h2>Assignments</h2>
+         </header>
         
+        <main id="main-content">
+            <div class="columns">
+                <section class = "one">
+                    <a class = "links" href = "csce242assignments/01/index.html"><h3>Assignment 1 - Basic HTML</h3></a> 
+                    <img src="images/Asmt01.jpg">
+                    <p>A website about a topic of my choosing. Get to know me with two images, two paragraphs, two links, a bulleted list, and a table.</p>
+                </section>
+                <section class = "one">
+                    <a class="links" href = "csce242assignments/02/index.html"><h3>Assignment 2 - Basic CSS </h3></a> 
+                    <img src="images/Asmt02.jpg">
+                    <p>A website about a topic of my choosing (Beach Sunsets) with navigation, a theme, and matching styling using CSS. See styled pictures, text, and a table. </p>
+                </section>
+                <section class = "one">
+                    <a class="links" href = "csce242assignments/03/index.html"><h3>Assignment 3 - Page Layout </h3></a> 
+                    <img src="images/Asmt03.jpg">
+                    <p>A website utilizing html elements: header, footer, nav, section, aside, & article. Includes a navigation bar and CSS styling using flexbox and media query.</p>
+                </section>
+                
+            </div> 
+        </main>
+        <footer>
+            <p>&copy; emmahubertt</p>
+        </footer>
     </div>
 </body> 
-
 </html>

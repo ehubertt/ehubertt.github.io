@@ -3,26 +3,36 @@ body {
     background: url(images/wallpaper.jpg);
 }
 
-/* structure */ 
+/* content */ 
 #content {
     text-decoration: none;
-    background: #FAD79E; /* aka: white */
+    background: #FAD79E; 
     padding: 5px;
     width: 80%; /* width of div across page*/
     margin: auto; /* center horizontally */
     border-radius: 5px; /* will round corners a little bit */
 }
-
-/* Navigation */
-#main-nav a {
+#main-header {
+    text-align: center;
+}
+.columns {
+    
+    padding: 2px;
+    text-align: center;
+    margin: 5px;
+}
+.one {
+    margin: 10px;
+    border: 5px solid #FE809D;
     text-decoration: none;
     color: #FBA14C;
     background: #FDF1BF;
-    padding: 2px;
-    border-radius: 5px;
 }
-#main-nav a:hover {
-    background:#fff;
+.links {
+    text-decoration: none;
+}
+#main-content h3:hover {
+    color:#302F2F;
 }
 
 
@@ -37,3 +47,11 @@ h3 {
 .description {
     color: #FF8A66;
 }
+
+/* For larger resolutions */
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+}
+
