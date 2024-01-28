@@ -27,19 +27,13 @@ body {
     text-decoration: none;
     color: #FBA14C;
     background: #FDF1BF;
+    
 }
 .links {
     text-decoration: none;
 }
-#main-content h3:hover  {
+#main-content h3:hover {
     color:#302F2F;
-}
-#main-content a:hover {
-    color:#FE809D;
-}
-#body{
-    max-width:95%;
-    margin:auto;
 }
 
 
@@ -50,40 +44,19 @@ h1 {
 }
 h3 {
     color: #FF9EA7;
-    padding-bottom:0px;
 }
 .description {
     color: #FF8A66;
 }
-h2 {
+
+#main-content {
     text-align: center;
 }
-#main-content,
-p {
-    margin: 10px;
-}
-
 
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
     .columns {
         display: flex;
     }
-    .one {
-        width: 475px;
-        height: 350px;
-    }
 }
-
-/* For lsmaller resolutions */
-@media only screen and (max-width: 768px) {
-    
-    .one {
-        width: auto;
-        height: auto;
-        padding: auto;
-    }
-}
-
-
 

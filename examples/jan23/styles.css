@@ -1,0 +1,89 @@
+ /* to put a color in a variable*/
+:root {
+    --background-color: #b7b8a5;
+    --primary-color: #f2dbd5;
+    --secondary-color: #c3bebe;
+}
+
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--background-color);
+}
+
+/* structure */ 
+#content {
+    background: var(--primary-color); /* aka: white */
+    padding: 5px;
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 5px; /* will round corners a little bit */
+}
+
+#block {
+    width: 150px;
+    height: 150px;
+    background: var(--secondary-color);
+    position: relative; /* static -- stays in same place , absolute -- relative to parent, dont take space on dom , relative -- reserves space , fixed -- stays in same place on page (in-view)*/
+    /* position relative to page */ 
+    /* margin: auto; for center */
+    top: 0;
+    left: 0;
+    animation-name: play;
+    animation-duration: 2s;
+    animation-iteration-count: 2; /* infintite -makes animation go forever*/
+    
+
+}
+
+#play-area {
+    width: 100%;
+    height: 400px;
+    background: #FAF4E3;
+    position: relative;
+}
+
+/*Animation*/ 
+
+@keyframes play {
+    0% {
+        background: red;
+        opacity: 1;
+        left:0;
+        transform: rotate(20deg);
+    }
+    20% {
+        background: orange;
+    }
+    40% {
+        background: yellow;
+        left: 80%;
+    }
+    60% {
+        background: green;
+        
+    }
+    80% {
+        background: blue;
+    }
+
+    100% {
+        background: violet;
+        left:0;
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+/* Typography */
+
+h1 {
+    color: darkslategrey;
+}
+#block p {
+    text-align: center;
+    line-height: 150px; /*set line height equal to width to get in center of block*/
+}
