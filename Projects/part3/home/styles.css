@@ -1,0 +1,128 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --light-grey: #d3d3d3;
+    --dark-grey: #433f3f;
+    --bg: #abc;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--bg);
+}
+
+/* structure */ 
+#content {
+    background: var(--white); /* aka: white */
+    padding: 5px;
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 5px; /* will round corners a little bit */
+}
+
+/*header*/
+#header {
+    text-align: center;
+}
+#main-nav ul {
+    /*remove list indent */
+    padding-left: 0;
+    margin: auto;
+}
+#main-nav li {
+    list-style-type: none;
+    background: var(--light-grey);
+    padding: 10px;
+    border-bottom: 1px solid var(--dark-grey);
+    border: 1px solid var(--dark-grey);
+    border-radius: 15px;
+}
+#main-nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Main Content */
+
+#main-content {
+   text-align: center;
+}
+.images{
+    margin:5px;
+}
+
+img{
+    border-radius: 29px;
+}
+.two ,.three {
+    border: 2px solid var(--dark-grey);
+    background: var(--light-grey);
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 29px;
+}
+.columns1{
+    margin-bottom: 20px;
+}
+.contact-info{
+    border: 2px solid var(--dark-grey);
+    background: var(--light-grey);
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 29px; 
+}
+.contact-info h3{
+    width:30%;
+}
+
+
+
+
+
+/* For larger resolutions */
+@media only screen and (min-width: 768px) {
+    .columns1 {
+        display: flex;
+        width:90%;
+        margin:auto;
+        margin-top: 35px;
+    }
+    .columns{
+        display:flex;
+    }
+    #main-nav {
+        display:flex;
+        
+    }
+    #main-nav li {
+        text-align: center;
+        padding: 2px solid var(--dark-grey);
+        margin:40px;
+    }
+    #main-nav li:hover {
+        border-bottom: 2px solid var(--dark-grey);
+    }
+    .img-box {
+        display: flex;
+        margin:auto;
+        margin-top:5px;
+    }
+    .contact-info {
+        display:flex;
+        width:90%;
+    }
+}
+
+
+/* For smaller resolutions */
+@media only screen and (max-width: 768px) {
+    .img-box{
+        display:flex;
+    }
+    .one , .two , .three {
+        text-align: center;
+        margin:auto;
+    }
+}

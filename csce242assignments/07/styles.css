@@ -1,0 +1,63 @@
+:root {
+    --blue: #5D878C;
+    --bg: #F1F2E9;
+    --pink: #D98282;
+    --yellow: #F2F0D5;
+    --white: #fff;
+}
+
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--bg);
+}
+
+#content 
+{
+    width:90%;
+    margin:auto;
+}
+
+/* Typography */
+
+h1 , h2 {
+    color: var(--blue);
+    text-align: center;
+    
+}
+
+.columns {
+    padding: 2px;
+    text-align: center;
+    margin: 5px;
+}
+.column3{
+    background: var(--blue);
+    color: var(--white);
+}
+.column1 , .column2 {
+    background: var(--yellow);
+    color: var(--blue);
+    text-align: center;
+    
+}
+.column1 , .column2 , .column3 {
+    
+    width: 100%;
+    margin: 50px;
+    height: 700px;
+    border: 1px solid var(--blue);
+}
+p{
+    text-align: left;
+    padding: 7px;
+}
+
+
+/* For larger resolutions */
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+        
+    }
+}

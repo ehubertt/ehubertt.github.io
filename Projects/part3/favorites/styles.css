@@ -1,0 +1,88 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --light-grey: #d3d3d3;
+    --dark-grey: #433f3f;
+    --bg: #abc;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--bg);
+}
+
+/* structure */ 
+#content {
+    background: var(--white); /* aka: white */
+    padding: 5px;
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 5px; /* will round corners a little bit */
+}
+
+/*header*/
+#header {
+    text-align: center;
+}
+#main-nav ul {
+    /*remove list indent */
+    padding-left: 0;
+    margin: auto;
+}
+#main-nav li {
+    list-style-type: none;
+    background: var(--light-grey);
+    padding: 10px;
+    border-bottom: 1px solid var(--dark-grey);
+    border: 1px solid var(--dark-grey);
+    border-radius: 15px;
+}
+#main-nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Main Content */
+
+.save-favs {
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--dark-grey);
+}
+.buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+.btn-section{
+    margin-bottom: 20px;
+}
+button{
+    width: 150px;
+    height:50px;
+}
+
+
+/* For larger resolutions */
+@media only screen and (min-width: 768px) {
+
+    .columns{
+        display:flex;
+    }
+    #main-nav {
+        display:flex;
+        
+    }
+    #main-nav li {
+        text-align: center;
+        padding: 2px solid var(--dark-grey);
+        margin:40px;
+    }
+    #main-nav li:hover {
+        border-bottom: 2px solid var(--dark-grey);
+    }
+    .save-favs{
+        width:90%;
+        margin: auto;
+    }
+}
+
+

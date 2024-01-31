@@ -1,0 +1,36 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: #abc;
+}
+
+/* structure */ 
+#content {
+    background: #fff; /* aka: white */
+    padding: 5px;
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 5px; /* will round corners a little bit */
+}
+
+#strawberry {
+    
+}
+
+.hidden {
+    display:none;
+}
+
+
+
+/* Typography */
+
+h1 {
+    color: darkslategrey;
+}
+
+.special {
+    background: lightpink;
+    color:magenta;
+    border: 2px dotted magenta;
+    size: 2em;
+}
