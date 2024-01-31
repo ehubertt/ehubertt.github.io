@@ -73,7 +73,6 @@ button{
     }
     #main-nav li {
         text-align: center;
-        padding: 2px solid var(--dark-grey);
         margin:40px;
     }
     #main-nav li:hover {
