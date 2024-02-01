@@ -6,16 +6,22 @@ const changePic = () => {
     messageP.src="images/img2.png";
     
 };
+
 const addStar = () => {
-    
-    const Star = document.getElementById("star");
-    starsss.innerHTML ="&#9733";
-    Star.appendChild(starsss);
-    
-};
+    console.log("stars");
+    const playground = document.getElementById("star-playground");
+   playground.innerHTML += "<img src= 'images/star.png'/>";
+}
+
+
+document.getElementById('rotationSlider').addEventListener('input', function() {
+    const rotationValue = this.value;
+    document.getElementById('rotatingImage').style.transform = `rotate(${rotationValue}deg)`;
+});  
+
 
 
 document.getElementById("swap").onclick = changePic;
-document.getElementById("star").onclick = addStar;
+document.getElementById("star-column").onclick=addStar;
 
 

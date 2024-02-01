@@ -52,6 +52,64 @@ p{
     text-align: left;
     padding: 7px;
 }
+#star-playground {
+    width:50%;
+    height: 90%;
+    margin:auto;
+}
+
+/*
+Code help and referenced from W3 schools and chatgpt, used a combination of both examples to create and customize the slider 
+*/
+.slider-container {
+    width: 100%;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    perspective: 1000px;
+    margin:20px;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 10px;
+    margin: 10px 0;
+    background-color: #ddd;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--pink);
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: var(--pink);
+    cursor: pointer;
+}
+
+span {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+
+
 
 
 /* For larger resolutions */
