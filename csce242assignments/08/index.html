@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- Author: Emma Hubert -->
+        <title>Assignment 08</title>
+        <link rel="stylesheet" href = "styles.css">
+    </head>
+
+    <body>
+        <div id ="content">
+            <header> 
+                <h1>Assignment 08</h1>
+                <h2>Conditionals</h2>
+                <nav id="main-nav">
+                    <div id="hamburger">
+                        <div></div>
+                    </div>
+                    <ul id="exercises" class="hide-small">
+                        <li id="exercise1">Exercise 1</li>
+                        <li id="exercise2">Exercise 2</li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="columns">
+                <section id="section1" class="column1" >
+                    <h3>Enter Command</h3>
+                    <ul class="commands">
+                        <li>b: Read a book</li>
+                        <li>c: Act like a clown</li>
+                        <li>p: Have a birthday party</li>
+                        <li>r: Walk in the rain</li>
+                        <li>s: Shovel up some dirt</li>
+                        <li>w: Go to work</li>
+                    </ul>
+                    <input type="text" id="command">
+                    <img id="swap" src="images/shovel.jpg">
+                    <p>
+                        Image by
+                        <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2">Freepik</a>
+                    </p>
+                </section>
+                <section id="section2" class="hide-yoga">
+                    <h3>Yoga Slide</h3>
+                    <div class="image-container">
+                        <img id="image-slide" src="images/yoga1.jpg">
+                      </div>
+                    <div class="slider-container">
+                        <input type="range" class="slider" id="myRange" min="1" max="8" value="1" >
+                    </div>
+                </section>
+               
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

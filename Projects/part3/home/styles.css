@@ -4,77 +4,132 @@
     --light-grey: #d3d3d3;
     --dark-grey: #433f3f;
     --bg: #abc;
+    --content-bg: #f7dfec; 
+    --nav-hover: #F2C9E0;
+    --nav-txt: #000;
+    --section-bg: #d0e7f0;
+    --section-border: #D96690;
+    --img-border: #F28DB2;
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:sans-serif ;
     background: var(--bg);
 }
 
 /* structure */ 
 #content {
-    background: var(--white); /* aka: white */
+    background: var(--content-bg); 
+    border: 4px solid var(--section-border);
     padding: 5px;
     width: 80%; /* width of div across page*/
     margin: auto; /* center horizontally */
-    border-radius: 5px; /* will round corners a little bit */
+    border-radius: 15px; /* will round corners a little bit */
+    
 }
 
 /*header*/
 #header {
     text-align: center;
 }
+#main-nav {
+    margin-top: 0px;
+    padding-top: 0px;
+}
 #main-nav ul {
     /*remove list indent */
     padding-left: 0;
     margin: auto;
+    margin-top: 0px;
 }
 #main-nav li {
     list-style-type: none;
-    background: var(--light-grey);
+    background: var(--white);
     padding: 10px;
-    border-bottom: 1px solid var(--dark-grey);
-    border: 1px solid var(--dark-grey);
+    border: 4px solid var(--section-border);
     border-radius: 15px;
 }
 #main-nav a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--nav-txt);
 }
+#main-nav li:hover {
+    background: var(--nav-hover);
+}
+#header img{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border: 4px solid var(--section-border);
+    border-radius: 15px;
+}
+
+/* Hamburger */
+
+#hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.hide-small {
+    display: none;
+}
+
 
 /* Main Content */
 
 #main-content {
    text-align: center;
 }
-.images{
+.images img{
     margin:5px;
+    max-width: 250px;
+    max-height:90px;
 }
 
+.collage{
+    width:80%;
+    margin:auto;
+}
+.img-box {
+    width: 50%;
+    text-align: center;
+}
 img{
     border-radius: 29px;
 }
-.two ,.three {
-    border: 2px solid var(--dark-grey);
-    background: var(--light-grey);
+.img-box img{
+    border: 3px solid var(--img-border);
+}
+ .two ,.three {
+    border: 3px solid var(--section-border);
+    background: var(--section-bg);
     margin-left: 20px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 29px;
 }
 .columns1{
     margin-bottom: 20px;
 }
 .contact-info{
-    border: 2px solid var(--dark-grey);
-    background: var(--light-grey);
+    border: 3px solid var(--section-border);
+    background: var(--section-bg);
     margin:auto;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 10px;
     border-radius: 29px; 
 }
-.contact-info h3{
+.contact-info h2{
     width:30%;
+}
+.women-img {
+    border: 3px solid var(--section-border);
+}
+h2{
+    -webkit-text-stroke: 1px var(--section-border);
+    color: var(--content-bg);
 }
 
 
@@ -92,6 +147,9 @@ img{
     .columns{
         display:flex;
     }
+    #nav-items{
+        display:flex;
+    }
     #main-nav {
         display:flex;
         
@@ -99,9 +157,6 @@ img{
     #main-nav li {
         text-align: center;
         margin:40px;
-    }
-    #main-nav li:hover {
-        border-bottom: 2px solid var(--dark-grey);
     }
     .img-box {
         display: flex;
@@ -112,6 +167,13 @@ img{
         display:flex;
         width:80%;
     }
+    .women-img {
+        max-height: 250px;;
+    }
+    #hamburger {
+        display: none;
+    }
+    
 }
 
 
@@ -119,9 +181,34 @@ img{
 @media only screen and (max-width: 768px) {
     .img-box{
         display:flex;
+        margin: auto;
+        max-width: 90%;
     }
     .one , .two , .three {
         text-align: center;
-        margin:auto;
+        margin: 30px;
+       
     }
+    #content img{
+        margin-bottom: 30px;
+    }
+    .one {
+        margin-top: 20px;;
+    }
+    .collage-img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+    .women-img {
+        display: none;
+    }
+    .contact-info h2{
+        margin:auto;
+        text-align: center;
+        width:auto;
+    }
+    .contact-info {
+        max-width: 80%;
+    }
+    
 }

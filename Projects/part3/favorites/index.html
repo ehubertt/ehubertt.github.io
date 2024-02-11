@@ -11,7 +11,12 @@
             <header id="header">
                 <img src="images/logo.png">
                 <nav id="main-nav">
-                    <ul class="columns">
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="hide-small">
                         <li><a href="https://ehubertt.github.io/Projects/part3/home/index.html">Home</a></li>
                         <li><a href="https://ehubertt.github.io/Projects/part3/creators/index.html">Creators</a></li>
                         <li><a href="https://ehubertt.github.io/Projects/part3/products/index.html">Products</a></li>
@@ -22,15 +27,32 @@
             </header>
             <main id="main-content">
               <div class="save-favs">
-                    <h2>Save you Favorites!</h2>
+                    <h2>Save you Favorites! &#10084</h2>
               </div>
               <div class="buttons">
-                <section class="btn-section"> <button id="category-click">Category</button></section>
-                <section class="btn-section"><button id="name-click">Please enter name</button></section>
-                <section class="btn-section"><button id="save-click">Click to save</button></section>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Category ▼</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#" onclick="selectOption('Product')">Product</a>
+                      <a href="#" onclick="selectOption('Brand')">Brand</a>
+                      <a href="#" onclick="selectOption('Creator')">Creator </a>
+                    </div>
+                </div>
+                <div class="name">
+                    <label for="txt-name">Enter name:</label>
+                    <input type="text" name="txt-name">
+                </div>
+                <div class="why-fav">
+                    <label for="txt-why">Why you love it?!</label>
+                    <input type="text" name="txt-why">
+                </div>
+                
+                
+                <section class="save"><button id="save-click">Click to save</button></section>
               </div>
             </main>
             
         </div>
     </body>
+    <script src="script.js"></script>
 </html>
