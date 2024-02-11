@@ -105,7 +105,7 @@ body {
 
 
 /* For larger resolutions */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 812px) {
     
     #nav-items{
         display:flex;
@@ -138,7 +138,7 @@ body {
 
 
 /* For smaller resolutions */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) {
     .brand {
         margin: 20px;
         padding: 20px;

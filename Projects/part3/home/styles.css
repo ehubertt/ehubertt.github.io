@@ -137,7 +137,7 @@ h2{
 
 
 /* For larger resolutions */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 812px) {
     .columns1 {
         display: flex;
         width:80%;
@@ -178,7 +178,7 @@ h2{
 
 
 /* For smaller resolutions */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) {
     .img-box{
         display:flex;
         margin: auto;
