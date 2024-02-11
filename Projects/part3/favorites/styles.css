@@ -86,11 +86,7 @@ body {
     border-bottom: 2px solid var(--dark-grey);
 }
 
-.buttons {
-    text-align: left;
-    margin-top: 40px;
-    margin-left: 20px;
-}
+
 .save-favs , .buttons{
     width:90%;
     margin: auto;
