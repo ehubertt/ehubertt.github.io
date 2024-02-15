@@ -1,5 +1,6 @@
 // Emma Hubert
 
+
 let rotationAngle =0;
 
 const showHideNav = () => {
@@ -39,25 +40,34 @@ const changePic = () => {
     
 };
 
+const yoga = document.getElementById("section2");
+const picCommand = document.getElementById("section1");
+//yoga.style.display = "none";
+console.log(yoga.style.display);
+
 const showHide2 = () => {
     
-    const yoga = document.getElementById("section2");
-    const picCommand = document.getElementById("section1");
-    if(yoga.style.display == "none") {
+    //const yoga = document.getElementById("section2");
+    //const picCommand = document.getElementById("section1");
+    
+    if(yoga.style.display = "none") {
         yoga.style.display = "block";
     }
     picCommand.style.display = "none";
+    console.log(yoga.style.display);
     
 };
 
 const showHide1 = () => {
    
-    const yoga = document.getElementById("section2");
-    const picCommand = document.getElementById("section1");
+    //const yoga = document.getElementById("section2");
+    //const picCommand = document.getElementById("section1");
     if(picCommand.style.display == "none") {
         picCommand.style.display = "block";
     }
     yoga.style.display = "none";
+    
+
 
     
 };

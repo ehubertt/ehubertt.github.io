@@ -1,0 +1,178 @@
+:root {
+    --blue: #5D878C;
+    --bg: #F1F2E9;
+    --pink: #D98282;
+    --yellow: #F2F0D5;
+    --white: #fff;
+    --ball-top: 0px;
+}
+
+
+
+/* Hamburger */
+
+#hamburger div {
+   /* width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;*/
+    width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 20px solid #555;
+}
+#hamburger {
+    width:20px;
+    height:20px;
+    text-align: left;
+}
+
+.hide-small {
+    display: none;
+}
+
+
+
+
+/* Structure */ 
+
+
+#section2 {
+    display: none;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--bg);
+}
+
+#content 
+{
+    width:90%;
+    margin:auto;
+}
+
+.column1 , .hide-yoga {
+    background: var(--yellow);
+    color: var(--blue);
+    text-align: center;
+    
+}
+.column1 , .hide-yoga {
+    
+    border: 1px solid var(--blue);
+}
+p{
+    padding: 7px;
+}
+
+#main-nav ul {
+    padding-left: 0px;
+}
+
+#main-nav li {
+    list-style-type: none;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: black;
+}
+.column1 {
+    height: 600px;
+    width: 300px;
+    margin:auto;
+}
+.hide-yoga {
+    height: auto;
+    width: 350px;
+    margin:auto;
+}
+.exercises {
+    color: var(--blue);
+}
+#exercise1:hover {
+    cursor: pointer;
+}
+
+
+
+/*Picture commands*/
+
+#ball-container {
+    width: 40%;
+    height: 400px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid var(--blue);
+    background: var(--white);
+}
+#btn-ball {
+    color: var(--blue);
+    text-decoration: underline 1px solid var(--blue);
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+#ball {
+    width: 80%;
+    margin:auto;
+    position: relative;
+    top: var(--ball-top);
+}
+
+
+/* yoga pictures*/ 
+.yoga-list{
+    text-decoration: none;
+    list-style-type: none;
+}
+#yoga-img {
+    width: 40%;
+    margin:left;
+    margin-bottom: 10px;
+}
+#yoga {
+    padding: 0px;
+    width: 300px;
+    text-align: left;
+    margin-left: 20px;
+}
+#dp{
+    padding-left: 30px;
+}
+.list-flex {
+    display: flex;
+}
+
+
+/* Typography */
+
+h1 , h2 {
+    color: var(--blue);
+    text-align: center;
+    
+}
+
+/* For larger resolutions */
+@media only screen and (min-width: 768px) {
+    #main-nav li {
+        display: inline-block;
+    }
+    #hamburger {
+        display: none;
+    }
+    .hide-small {
+        display: block;
+    }
+    #main-nav ul{
+        text-align: center;
+    }
+    li + li::before {
+        content: " | ";
+    }
+}
+
+

@@ -10,6 +10,7 @@
     --section-bg: #d0e7f0;
     --section-border: #D96690;
     --img-border: #F28DB2;
+    --txt-border: #ae5273;
 }
 
 body {
@@ -130,6 +131,7 @@ img{
 h2{
     -webkit-text-stroke: 1px var(--section-border);
     color: var(--content-bg);
+    letter-spacing: 1px;
 }
 
 
@@ -209,6 +211,9 @@ h2{
     }
     .contact-info {
         max-width: 80%;
+    }
+    #content {
+        width:95%;
     }
     
 }
