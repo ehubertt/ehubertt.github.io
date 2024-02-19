@@ -28,7 +28,7 @@ body {
     
 }
 
-/*header*/
+/*header and footer*/
 #header {
     text-align: center;
 }
@@ -56,11 +56,39 @@ body {
 #main-nav li:hover {
     background: var(--nav-hover);
 }
-#header img{
-    margin-top: 30px;
-    margin-bottom: 0px;
+#logo{
+    margin: auto;
+    margin-top: 40px;
     border: 4px solid var(--section-border);
     border-radius: 15px;
+    text-align: center;
+}
+.logo-img{
+    width: 100%;
+    text-align: center;
+}
+#logo:hover{
+    border: 4px dotted var(--section-border);
+}
+
+#foot {
+    width:100%;
+    background-image: url('images/wallpaper.jpg');
+    height: 150px;
+    margin-top: 40px;
+    border-top: 4px solid var(--section-border);
+}
+.footer{
+    position: relative;
+    top: 30%;
+    padding: 5px;
+    border: 4px solid var(--section-border);
+    border-radius: 15px;
+    color: var(--section-border);
+    width: 120px;
+    background: var(--content-bg);
+    text-align: center;
+    margin:auto;
 }
 
 /* Hamburger */
@@ -68,8 +96,16 @@ body {
 #hamburger div {
     width: 25px;
     height: 2px;
-    background-color: black;
+    background-color: var(--img-border);
+    border: 1px solid var(--section-border);
     margin: 6px 0;
+}
+#hamburger{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#hamburger:hover {
+    background-color: var(--nav-hover);
 }
 
 .hide-small {
@@ -153,6 +189,24 @@ img {
         width: 325px;
         height:275px;
     }
+    .head {
+        width:100%;
+        background-image: url('images/wallpaper.jpg');
+        height: 300px;
+        border-bottom: 4px solid var(--section-border);
+        margin:0px;
+        padding:0px;
+        margin-bottom: 30px;
+    }
+    body{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #content {
+        margin-top: 75px;
+        margin-bottom: 100px;
+    }
 }
 
 /* For smaller resolutions */
@@ -172,6 +226,12 @@ img {
     .box5 {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .box6 a{
+        font-size: 12px;
+    }
+    #content {
+        width:95%;
     }
 }
 
