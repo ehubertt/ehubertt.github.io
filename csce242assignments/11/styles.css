@@ -1,0 +1,122 @@
+:root {
+    --blue: #5D878C;
+    --bg: #F1F2E9;
+    --pink: #D98282;
+    --yellow: #F2F0D5;
+    --white: #fff;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--bg);
+}
+
+#content 
+{
+    width:90%;
+    margin:auto;
+}
+
+h1{
+    color: var(--blue);
+    text-align: center;
+}
+h2{
+    color: var(--pink);
+    text-align: center;
+}
+
+.column {
+    background: var(--blue);
+    margin: auto;
+    width: 250px;
+    height: 300px;
+}
+
+.columns h3{
+    text-align: center;
+    color: var(--white);
+}
+
+.columns{
+    text-align: center;
+}
+.foot{
+    text-align: center;
+    color: var(--blue);
+}
+
+.column section {
+    padding: 10px;
+    background: #bbc8f2;
+    margin: 10px;
+    flex: 1;
+}
+  
+#dialog section {
+    padding: 10px;
+    background: var(--yellow);
+    margin: 10px;
+}
+.w3-container{
+    background: var(--yellow);
+    color: var(--blue);
+}
+
+#dialog-content {
+    display: flex;
+    align-items: center;
+}
+.tree-image {
+    flex: 2;
+    margin-right: 20px; 
+}
+
+.tree-image img {
+    width: 75%;
+    height:auto;
+}
+
+#dialog-details {
+    flex: 1; 
+    text-align: left;
+}
+
+#dialog-content {
+    max-width: 100%;
+    height: auto;
+}
+
+#dialog-details h3{
+    color: var(--blue);
+    text-align: left;
+}
+
+
+
+/* For larger resolutions */
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .tree-image, #dialog-details {
+        flex: 1;
+    }
+    
+    #dialog-details {
+        margin-left: 20px; 
+    }
+    
+}
+
+/* For smaller resolutions */
+@media only screen and (man-width: 768px) {
+    .columns {
+        margin-top: 50px;
+    }
+    .column {
+        margin-top: 20px;
+    }
+}
