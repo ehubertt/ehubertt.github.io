@@ -1,0 +1,58 @@
+:root {
+    --blue: #5D878C;
+    --bg: #F1F2E9;
+    --pink: #D98282;
+    --yellow: #F2F0D5;
+    --white: #fff;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--bg);
+}
+
+#content 
+{
+    width:90%;
+    margin:auto;
+}
+
+h1{
+    color: var(--blue);
+    text-align: center;
+}
+
+.images{
+    width: 20%;
+    height:auto;
+}
+
+#columns{
+    display:flex;
+    margin: 30px;
+    
+}
+#house{
+    display:flex;
+    margin: 30px;
+    background: var(--pink);
+}
+#description{
+    margin-left: 30px;
+    color: var(--white);
+}
+h2{
+    text-align: center;
+    color: var(--blue);
+}
+.floor-imgs{
+    width: 70%;
+    height: auto;
+    margin:auto;
+}
+#columns p{
+    color: var(--blue);
+}
+#columns div{
+    text-align: center;
+}
