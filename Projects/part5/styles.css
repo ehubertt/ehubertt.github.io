@@ -1,0 +1,205 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --light-grey: #d3d3d3;
+    --dark-grey: #433f3f;
+    --bg: #abc;
+    --content-bg: #f7dfec; 
+    --nav-hover: #F2C9E0;
+    --nav-txt: #000;
+    --section-bg: #ccd6e0;
+    --section-border: #D96690;
+    --img-border: #F28DB2;
+    --header-bg: #8896a3;
+}
+
+body {
+    font-family:sans-serif ;
+    background: var(--bg);
+}
+
+/* structure */ 
+#content {
+    background: var(--content-bg); 
+    border: 4px solid var(--section-border);
+    padding: 5px;
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 15px; /* will round corners a little bit */
+    
+}
+
+/*header and footer*/
+#header {
+    text-align: center;
+}
+#main-nav {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+#main-nav ul {
+    /*remove list indent */
+    padding-left: 0;
+    margin: auto;
+    margin-top: 0px;
+}
+#main-nav li {
+    list-style-type: none;
+    background: var(--white);
+    padding: 10px;
+    border: 4px solid var(--section-border);
+    border-radius: 15px;
+}
+#main-nav a {
+    text-decoration: none;
+    color: var(--nav-txt);
+}
+#main-nav li:hover {
+    background: var(--nav-hover);
+}
+#logo{
+    margin: auto;
+    margin-top: 40px;
+    border: 4px solid var(--section-border);
+    border-radius: 15px;
+    text-align: center;
+}
+.logo-img{
+    width: 100%;
+    text-align: center;
+}
+#logo:hover{
+    border: 4px dotted var(--section-border);
+}
+
+#foot {
+    width:100%;
+    background-image: url('images/wallpaper.jpg');
+    height: 150px;
+    margin-top: 40px;
+    border-top: 4px solid var(--section-border);
+}
+.footer{
+    position: relative;
+    top: 30%;
+    padding: 5px;
+    border: 4px solid var(--section-border);
+    border-radius: 15px;
+    color: var(--section-border);
+    width: 120px;
+    background: var(--content-bg);
+    text-align: center;
+    margin:auto;
+}
+
+/* Hamburger */
+
+#hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: var(--img-border);
+    border: 1px solid var(--section-border);
+    margin: 6px 0;
+}
+#hamburger{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.hide-small {
+    display: none;
+}
+#hamburger:hover {
+    background-color: var(--nav-hover);
+}
+
+
+
+/* Main Content */
+
+.name {
+    text-align: center;
+    -webkit-text-stroke: 1px var(--section-border);
+    color: var(--content-bg);
+}
+.images{
+    border-radius: 20px;
+    border: 4px solid var(--img-border);
+    width: 250px;
+    height:125px;
+}
+.brand {
+    border-radius: 20px;
+    background: var(--section-bg);
+    border: 3px solid var(--section-border);
+    color: var(--black);
+}
+.brand {
+    text-align: center;
+}
+
+
+
+
+/* For larger resolutions */
+@media only screen and (min-width: 812px) {
+    
+    #nav-items{
+        display:flex;
+    }
+    #main-nav {
+        display:flex;
+        
+    }
+    #main-nav li {
+        text-align: center;
+        margin:40px;
+    }
+    .brand-box {
+        display:flex;
+        width: 80%;
+        margin: auto;
+    }
+    .brand {
+        width: 100%;
+        margin: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 20px;
+    }
+    #hamburger {
+        display: none;
+    }
+    .head {
+        width:100%;
+        background-image: url('images/wallpaper.jpg');
+        height: 300px;
+        border-bottom: 4px solid var(--section-border);
+        margin:0px;
+        padding:0px;
+        margin-bottom: 30px;
+    }
+    body{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #content {
+        margin-top: 75px;
+        margin-bottom: 100px;
+    }
+    
+}
+
+
+/* For smaller resolutions */
+@media only screen and (max-width: 812px) {
+    .brand {
+        margin: 20px;
+        padding: 20px;
+    }
+    #content {
+        width:95%;
+    }
+    
+}
