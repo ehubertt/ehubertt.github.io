@@ -53,5 +53,58 @@
             "Hair & Body Fragrance Mist"
         ],
         "main_image": "oil.jfif"
+    },
+    {
+        "name": "Kendra Scott",
+        "decsription": "Kendra Scott is my go to spot for reliable, stylish, and affordable jewlery. They are always coming out with new trendy styles as well as constant classic pieces. A couple of my favorite things about Kendra Scott are their holiday gift sets, which offer great deals, as well as their replacement policy. If you go into the store with a piece that is broken or tarnished, they will immediatley give you a replacement. You also get 50% of any item in the store on your birthday month!",
+        "products": [
+            "Rings",
+            "Necklaces",
+            "Earrings",
+            "Bracelets",
+            "Watches",
+            "Personalized Jewlery"
+        ],
+        "main_image": "kendra.png"
+    },
+    {
+        "name": "Vuori",
+        "decsription": "Vuori is a performance apparel brand that has gained popularity for its stylish yet functional clothing. The reason I love Vuori is because they are comparable to LuLu Lemon excpet their price are lower and their quality to better.",
+        "products": [
+            "Men and Women clothing",
+            "Hoodies & Sweatshirts",
+            "Sports Brass",
+            "Joggers",
+            "Shorts & Skirts",
+            "Polos and Button-Downs"
+        ],
+        "main_image": "vuori.png"
+    },
+    {
+        "name": "e.l.f.",
+        "decsription": "e.l.f. Cosmetics, also known as Eyes Lips Face, is a cosmetics brand that has gained widespread popularity for its affordable yet high-quality makeup products. Elf has come out with nonstop hit products in the past few years. They take high end, over-priced luxury product that people love and recreate them with an even better formula but only for a fraction of the cost.",
+        "products": [
+            "Makeup Primer",
+            "Halo Glow Skin Tint",
+            "Lip products",
+            "Skincare",
+            "Eyebrow products",
+            "Makeup Brushes"
+        ],
+        "main_image": "elf.png"
+    },
+    {
+        "name": "Local Eclectic",
+        "decsription": "Local Eclectic is my favorite place to go for unique jewlery pieces. If you want something that likely no one else has and it is simple yet intruiging, Local Eclectic is the perfect place to look. My favorite pieces are the ones with Opal stones included.",
+        "products": [
+            "Rings",
+            "Charms",
+            "Earrings",
+            "Necklaces",
+            "Bracelets",
+            "Anklets"
+        ],
+        "main_image": "local.png"
     }
+
 ]

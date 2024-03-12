@@ -40,25 +40,30 @@ const getBrandSection = (brand) => {
     // create section for name inside brand section
     const name = document.createElement("section");
     name.className = "name";
-    name.innerHTML = `${brand.name}`
+    name.innerHTML = `<b>${brand.name}</b>`
     brandSection.appendChild(name);
 
     //add image section below name 
     const image = document.createElement("img");
     image.className = "images";
-    image.src = `https:ehubert.github.io/projects/part5/images/${brand.main_image}`;
+    image.src = `images/${brand.main_image}`;
     brandSection.appendChild(image);
 
     //add description below image 
     const description = document.createElement("p");
-    description.innerHTML = `${brand.description}`;
+    description.innerHTML = `${brand.decsription}`;
     brandSection.appendChild(description);
 
     //add array of available products 
     const products = document.createElement("p");
     products.className = "productsList";
-    products.innerHTML = `<b>Some Products offered by the brand:</b> ${brand.products.join(" , ")}`;
+    products.innerHTML = `<b>Some Products offered by the brand:</b> ${brand.products.join(", ")}`;
+    brandSection.appendChild(products);
+
+    return div;
 
 
 
 }
+
+window.onload = () => showBrands();
