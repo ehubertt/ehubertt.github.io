@@ -1,8 +1,8 @@
 const getHouses = async () => {
-    const src = "test.json";
+    const url = "https://ehubertt.github.io/examples/testJson/test.json";
 
     try{
-        const response = await fetch(src);
+        const response = await fetch(url);
         return response.json();
     }catch(error){
         console.log(error);
