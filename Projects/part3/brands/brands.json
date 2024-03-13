@@ -1,5 +1,6 @@
 [
     {
+        "_id": 1,
         "name": "Glow Recipe",
         "decsription": "Glow Recipe is a skincare brand that focuses on natural ingredients and innovative formulations aimed at achieving glowing, healthy skin. The brand draws inspiration from Korean beauty and actually made it's major debue on Shark Tank. From this brand, I specifically love the Watermelon Glow Niacinamide Dew Drops and the avocado eye cream.",
         "products": [
@@ -14,6 +15,7 @@
         "main_image": "glowrecipe.png"
     },
     {
+        "_id": 2,
         "name": "The Body Shop",
         "decsription": "The best smelling and most hydrating products you will ever put on your skin! The Body Shop has built a reputation as a socially-conscious beauty brand that offers high-quality products with a focus on ethics and sustainability. My personal favorite product is their body butter.",
         "products": [
@@ -28,6 +30,7 @@
         "main_image": "body.webp"
     },
     {
+        "_id": 3,
         "name": "Laneige",
         "decsription": "Laneige has saved my lips! I use their Lip Glowy Balm multiple times everyday. Laneige products are often praised for their effectiveness in tackling specific skincare issues such as dryness, dullness, and uneven skin tone. If you are looking for maximum hydration, use their lip and face (overnight) products!",
         "products": [
@@ -42,6 +45,7 @@
         "main_image": "laniege.jpg"
     },
     {
+        "_id": 4,
         "name": "Moroccanoil",
         "decsription": "I have been using Moroccanoil hair products for years and I will never stop. They have the most unique and indulgent smell on the market! They offer high-quality hair care products that provide hydration, nourishment, and shine to all hair types.",
         "products": [
@@ -55,6 +59,7 @@
         "main_image": "oil.jfif"
     },
     {
+        "_id": 5,
         "name": "Kendra Scott",
         "decsription": "Kendra Scott is my go to spot for reliable, stylish, and affordable jewlery. They are always coming out with new trendy styles as well as constant classic pieces. A couple of my favorite things about Kendra Scott are their holiday gift sets, which offer great deals, as well as their replacement policy. If you go into the store with a piece that is broken or tarnished, they will immediatley give you a replacement. You also get 50% of any item in the store on your birthday month!",
         "products": [
@@ -68,6 +73,7 @@
         "main_image": "kendra.png"
     },
     {
+        "_id": 6,
         "name": "Vuori",
         "decsription": "Vuori is a performance apparel brand that has gained popularity for its stylish yet functional clothing. The reason I love Vuori is because they are comparable to LuLu Lemon excpet their price are lower and their quality is better.",
         "products": [
@@ -81,6 +87,7 @@
         "main_image": "vuori.png"
     },
     {
+        "_id": 7,
         "name": "e.l.f.",
         "decsription": "e.l.f. Cosmetics, also known as Eyes Lips Face, is a cosmetics brand that has gained widespread popularity for its affordable yet high-quality makeup products. Elf has come out with nonstop hit products in the past few years. They take high end, over-priced luxury product that people love and recreate them with an even better formula but only for a fraction of the cost.",
         "products": [
@@ -94,6 +101,7 @@
         "main_image": "elf.png"
     },
     {
+        "_id": 8,
         "name": "Local Eclectic",
         "decsription": "Local Eclectic is my favorite place to go for unique jewlery pieces. If you want something that likely no one else has and it is simple yet intruiging, Local Eclectic is the perfect place to look. My favorite pieces are the ones with Opal stones included.",
         "products": [
