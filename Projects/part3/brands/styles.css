@@ -121,6 +121,8 @@ body {
     text-align: center;
     -webkit-text-stroke: 1px var(--section-border);
     color: var(--content-bg);
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 .images{
     border-radius: 20px;
@@ -157,7 +159,7 @@ body {
     }
     .brand-box {
         display:flex;
-        width: 80%;
+        width: 60%;
         margin: auto;
     }
     .brand {
