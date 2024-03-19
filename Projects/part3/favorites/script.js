@@ -57,7 +57,6 @@ const subitFavoritesForm = (e) => {
   const category = form.elements["category"].value;
   const userName = form.elements["user-name"].value;
   const categoryName = form.elements["category-name"].value;
-  //const dsc = form.elements["short-dsc"].value;
   const whyFav = form.elements["why-fav"].value;
 
   const section = document.getElementById("user-favorites");
@@ -69,7 +68,6 @@ const subitFavoritesForm = (e) => {
   <h4>Entry by: ${userName}</h4>
   <p><b>Why ${userName} loves ${categoryName}:</b> ${whyFav}</p>`
   section.appendChild(favDiv);
-  //<p><b>Description:</b> ${dsc}</p>
 
   // resources like W3 schools and others used to help stringify and save info from form
   // Save the information
@@ -78,7 +76,6 @@ const subitFavoritesForm = (e) => {
     category: category,
     userName: userName,
     categoryName: categoryName,
-    //description: dsc,
     whyLove: whyFav
   };
   favoritesList.push(newFavorite);
@@ -98,7 +95,6 @@ const loadSavedFavorites = () => {
       <h4>Entry by: ${favorite.userName}</h4>
       <p><b>Why ${favorite.userName} loves ${favorite.categoryName}:</b> ${favorite.whyLove}</p>`;
     section.appendChild(favDiv);
-    //<p><b>Description:</b> ${favorite.description}</p>
   });
 };
 
