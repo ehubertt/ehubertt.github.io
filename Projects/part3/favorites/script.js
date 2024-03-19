@@ -13,7 +13,7 @@ const showEmailResult = async(e) => {
   let response = await getEmailResult();
 
   if(response.status == 200){
-      result.innerHTML = "Email successfully sent";
+      result.innerHTML = "Successful!!";
       subitFavoritesForm(e);
   } else {
       result.innerHTML = "Sorry, your email was not sent";
@@ -48,11 +48,10 @@ const getEmailResult = async() => {
   }
 };
 
-//document.getElementById("favorites-form").onsubmit = showEmailResult;
 
 
 const subitFavoritesForm = (e) => {
-  console.log("Inside subitFavoritesForm");
+  
   e.preventDefault();
   const form = e.target;
   const category = form.elements["category"].value;
@@ -102,6 +101,5 @@ const loadSavedFavorites = () => {
 document.getElementById("logo").onclick = logoLink;
 document.getElementById("hamburger").onclick = showHideNav;
 document.getElementById("favorites-form").onsubmit =  showEmailResult;
-//document.getElementById("submit-btn").onclick =  subitFavoritesForm;
 
 window.addEventListener("load", loadSavedFavorites);
