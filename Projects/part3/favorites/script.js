@@ -6,8 +6,6 @@ const logoLink = () => {
   window.location.href= "https://ehubertt.github.io/Projects/part3/home/index.html";
 }
 
-
-
 const showEmailResult = async(e) => {
   e.preventDefault();
 
@@ -15,16 +13,16 @@ const showEmailResult = async(e) => {
   let response = await getEmailResult();
 
   if(response.status == 200){
-      result.innerHTML = "Submission successfully sent";
+      result.innerHTML = "Email successfully sent";
+      subitFavoritesForm(e);
   } else {
-      result.innerHTML = "Sorry, your submission was not sent";
+      result.innerHTML = "Sorry, your email was not sent";
   }
 
-  setTimeout(() => {
-    result.innerHTML = "";
-  }, 2000);
 
 };
+
+
 const getEmailResult = async() => {
   const form = document.getElementById("favorites-form");
   const formData = new FormData(form);
@@ -50,8 +48,11 @@ const getEmailResult = async() => {
   }
 };
 
+//document.getElementById("favorites-form").onsubmit = showEmailResult;
+
 
 const subitFavoritesForm = (e) => {
+  console.log("Inside subitFavoritesForm");
   e.preventDefault();
   const form = e.target;
   const category = form.elements["category"].value;
@@ -100,7 +101,7 @@ const loadSavedFavorites = () => {
 
 document.getElementById("logo").onclick = logoLink;
 document.getElementById("hamburger").onclick = showHideNav;
-document.getElementById("favorites-form").onsubmit = showEmailResult;
-document.getElementById("favorites-form").onsubmit = subitFavoritesForm;
+document.getElementById("favorites-form").onsubmit =  showEmailResult;
+//document.getElementById("submit-btn").onclick =  subitFavoritesForm;
 
 window.addEventListener("load", loadSavedFavorites);
