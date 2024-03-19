@@ -18,7 +18,7 @@ body {
 }
 
 /* structure */ 
-#content {
+#content , #user-favorites{
     background: var(--content-bg); 
     border: 4px solid var(--section-border);
     padding: 5px;
@@ -183,10 +183,54 @@ button{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-.name , .why-fav , .save{
+.user-name , .category-name, .why-fav , .save, .short-dsc{
     margin-top: 30px;
 }
+h2{
+    color: var(--dark-grey);
+}
+h4{
+    color:var(--img-border);
+}
 
+label{
+    display:block;
+}
+button {
+    border: 2px solid var(--img-border);;
+    height: 60px;
+    width: 100px;
+    background: var(--section-bg);
+    color: var(--section-border);
+}
+button:hover {
+    background: var(--content-bg);
+}
+
+#user-favorites{
+    text-align: center;
+}
+
+.user-favorite{
+    height: auto;
+    background: var(--section-bg);
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.fav-title{
+    -webkit-text-stroke: 1px var(--section-border);
+    color: var(--dark-grey);
+    font-size: 30px;
+}
+.user-favorite h2{
+    color: var(--section-border);
+}
+.user-favorite h3{
+    color: var(--img-border);
+}
 
 
 
@@ -223,11 +267,17 @@ button{
         margin: 0px;
         padding: 0px;
     }
+    .user-favorite {
+        width: 60%;
+    }
 }
 
 /* For smaller resolutions */
 @media only screen and (max-width: 768px) {
-    #content {
+    #content , #user-favorites {
         width:95%;
+    }
+    .user-favorite {
+        width: 80%;
     }
 }

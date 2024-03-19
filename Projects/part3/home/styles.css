@@ -176,10 +176,29 @@ form label{
     margin: 10px;
 }
 .contact{
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
-
+input , textarea{
+    border: 2px solid var(--img-border);
+    width: 200px;
+    height: 50px;
+}
+button {
+    border: 2px solid var(--img-border);;
+    height: 60px;
+    width: 100px;
+    margin-top: 17px;
+    background: var(--content-bg);
+    color: var(--section-border);
+}
+button:hover {
+    background: var(--light-grey);
+}
+.contact-info h2{
+    width: 100%;
+    margin: auto;
+}
 
 
 
@@ -211,10 +230,7 @@ form label{
         margin:auto;
         margin-top:5px;
     }
-    .flex-contact {
-        display:flex;
-        width:80%;
-    }
+    
     .contact-info{
         width: 80%;
     }

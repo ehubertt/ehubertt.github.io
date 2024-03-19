@@ -1,0 +1,283 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --light-grey: #d3d3d3;
+    --dark-grey: #433f3f;
+    --bg: #abc;
+    --content-bg: #f7dfec; 
+    --nav-hover: #F2C9E0;
+    --nav-txt: #000;
+    --section-bg: #d0e7f0;
+    --section-border: #D96690;
+    --img-border: #F28DB2;
+}
+
+body {
+    font-family:sans-serif ;
+    background: var(--bg);
+}
+
+/* structure */ 
+#content , #user-favorites{
+    background: var(--content-bg); 
+    border: 4px solid var(--section-border);
+    padding: 5px;
+    width: 80%; /* width of div across page*/
+    margin: auto; /* center horizontally */
+    border-radius: 15px; /* will round corners a little bit */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+/*header and footer*/
+#header {
+    text-align: center;
+}
+#main-nav {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+#main-nav ul {
+    /*remove list indent */
+    padding-left: 0;
+    margin: auto;
+    margin-top: 0px;
+}
+#main-nav li {
+    list-style-type: none;
+    background: var(--white);
+    padding: 10px;
+    border: 4px solid var(--section-border);
+    border-radius: 15px;
+}
+#main-nav a {
+    text-decoration: none;
+    color: var(--nav-txt);
+}
+#main-nav li:hover {
+    background: var(--nav-hover);
+}
+#logo{
+    margin: auto;
+    margin-top: 40px;
+    border: 4px solid var(--section-border);
+    border-radius: 15px;
+    text-align: center;
+}
+.logo-img{
+    width: 100%;
+    text-align: center;
+}
+#logo:hover{
+    border: 4px dotted var(--section-border);
+}
+
+#foot {
+    width:100%;
+    background-image: url('images/wallpaper.jpg');
+    height: 150px;
+    margin-top: 40px;
+    border-top: 4px solid var(--section-border);
+}
+.footer{
+    position: relative;
+    top: 30%;
+    padding: 5px;
+    border: 4px solid var(--section-border);
+    border-radius: 15px;
+    color: var(--section-border);
+    width: 120px;
+    background: var(--content-bg);
+    text-align: center;
+    margin:auto;
+}
+
+/* Hamburger */
+
+#hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: var(--img-border);
+    border: 1px solid var(--section-border);
+    margin: 6px 0;
+}
+#hamburger{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#hamburger:hover {
+    background-color: var(--nav-hover);
+}
+
+.hide-small {
+    display: none;
+}
+
+
+/* Main Content */
+
+.save-favs {
+    margin-bottom: 30px;
+    margin-left:20px;
+    margin-right: 20px;
+    border-bottom: 2px solid var(--dark-grey);
+}
+
+
+.save-favs , .buttons{
+    width:90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.save{
+    margin-bottom: 20px;
+}
+button{
+    width: 150px;
+    height:50px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: var(--light-grey);
+    color: var(--black);
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(--dark-grey);
+}
+  
+/* Dropdown button on hover & focus */
+ .dropbtn:hover, .dropbtn:focus {
+    background-color: var(--white);
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.user-name , .category-name, .why-fav , .save, .short-dsc{
+    margin-top: 30px;
+}
+h2{
+    color: var(--dark-grey);
+}
+h4{
+    color:var(--img-border);
+}
+
+label{
+    display:block;
+}
+button {
+    border: 2px solid var(--img-border);;
+    height: 60px;
+    width: 100px;
+    background: var(--section-bg);
+    color: var(--section-border);
+}
+button:hover {
+    background: var(--content-bg);
+}
+
+#user-favorites{
+    text-align: center;
+}
+
+.user-favorite{
+    height: auto;
+    background: var(--section-bg);
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.fav-title{
+    -webkit-text-stroke: 1px var(--section-border);
+    color: var(--dark-grey);
+    font-size: 30px;
+}
+.user-favorite h2{
+    color: var(--section-border);
+}
+.user-favorite h3{
+    color: var(--img-border);
+}
+
+
+
+/* For larger resolutions */
+@media only screen and (min-width: 768px) {
+    #nav-items{
+        display:flex;
+    }
+    .columns{
+        display:flex;
+    }
+    #main-nav {
+        display:flex;
+        
+    }
+    #main-nav li {
+        text-align: center;
+        margin:40px;
+    }
+    #hamburger {
+        display: none;
+    }
+    .head {
+        width:100%;
+        background-image: url('images/wallpaper.jpg');
+        height: 300px;
+        border-bottom: 4px solid var(--section-border);
+        margin:0px;
+        padding:0px;
+        margin-bottom: 30px;
+    }
+    body{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .user-favorite {
+        width: 60%;
+    }
+}
+
+/* For smaller resolutions */
+@media only screen and (max-width: 768px) {
+    #content , #user-favorites {
+        width:95%;
+    }
+    .user-favorite {
+        width: 80%;
+    }
+}

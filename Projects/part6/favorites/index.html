@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- Author: Emma Hubert -->
+        <title>Hip-HQ</title>
+        <link rel="stylesheet" href = "styles.css">
+    </head>
+
+    <body>
+        <section class="head">
+            <section class="logo-img">
+                <img id="logo" src="images/logo.png">
+            </section>
+            <header id="header">
+                <nav id="main-nav">
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="https://ehubertt.github.io/Projects/part3/home/index.html">Home</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/creators/index.html">Creators</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/products/index.html">Products</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/brands/index.html">Brands</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/favorites/index.html">Favorites</a></li>
+                    </ul>
+                </nav>
+            </header>    
+        </section> 
+        <div id ="content">
+            <main id="main-content">
+              <div class="save-favs">
+                    <h2>Share you Favorites! &#10084</h2>
+                    <h4>Have a product, brand, or creator you want everyone to know about?? Fill out the form below and post your results for other viewers to see!</h4>
+              </div>
+              <div class="buttons">
+                    <form
+                        id="favorites-form"
+                        action="https://api.web3forms.com/submit"
+                        method="POST"
+                        >
+                        <input
+                          type="hidden"
+                          name="access_key"
+                          value="8abac557-3c25-49b6-882a-c081117b9f1c"
+                        />
+                        <div class="dropdown">
+                            <label for="category">Category</label>
+                            <select name="category">
+                                <option value="Product">Product</option>
+                                <option value="Brand">Brand</option>
+                                <option value="Creator">Creator</option>
+                            </select>
+                        </div>
+                            <div class="user-name">
+                            <label for="user-name">Your Name:</label>
+                            <input
+                            type="text"
+                            placeholder="first and last"
+                            id="user-name"
+                            name="user-name"
+                            required
+                            minlength="3"
+                            />
+                        </div>
+                        <div class="category-name">
+                            <label for="category-name">Name of product/brand/creator:</label>
+                            <input
+                            type="text"
+                            id="category-name"
+                            name="category-name"
+                            required
+                            minlength="3"
+                            />
+                        </div>
+                        <div class="short-dsc">
+                            <label for="short-dsc">Provide a short description of the subject and a link to it! (link to brand/product page or link to a creator's social media page)</label>
+                            <textarea 
+                            type="text" 
+                            name="short-dsc"
+                            required 
+                            minlength="35"
+                            required></textarea>
+                        </div>
+                        <div class="why-fav">
+                            <label for="why-fav">Why you love it?!</label>
+                            <textarea 
+                            type="text" 
+                            name="why-fav"
+                            required 
+                            minlength="35"
+                            required></textarea>
+                        </div>
+                        <input
+                          type="hidden"
+                          name="redirect"
+                          value="https://web3forms.com/success"
+                        />
+                        <input
+                          type="hidden"
+                          name="subject"
+                          value="Contact from Hip HQ Website"
+                        />
+                        <input type="hidden" name="from_name" value="My Website" />
+                        <p>
+                            <input type="checkbox" required name="terms" /><label
+                              for="terms"
+                              class="inline"
+                              >I will allow other viewers to see my submission.</label
+                            >
+                          </p>
+                        <p>
+                          <button type="submit">Submit Form</button>
+                        </p>
+              
+                        <p id="result"></p>
+                    </form>
+                </div>
+            </main>
+            
+        </div>
+        <div id="user-favorites">
+            <h2 class="fav-title">Viewer Favorites:</h2>
+        </div>
+        <section id="foot">
+            <section class="footer">
+                <p>&copy; emmahubertt</p>
+        </section>
+    </body>
+    <script src="script.js"></script>
+</html>
