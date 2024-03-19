@@ -210,6 +210,10 @@ body {
         margin-top: 75px;
         margin-bottom: 100px;
     }
+    iframe {
+        width: 560px;
+        height: 315px
+    }
 }
 
 
@@ -218,6 +222,9 @@ body {
 @media only screen and (max-width: 768px) {
     #content {
         width:95%;
+    }
+    iframe {
+    max-width: 80%;
     }
 }
 
