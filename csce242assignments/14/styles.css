@@ -1,0 +1,26 @@
+:root {
+    --orange: coral;
+    --blue: cornflowerblue;
+    --bg: azure;
+  }
+  
+  /* Structure */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg);
+  }
+  
+  .images{
+    max-width: 300px;
+    max-height: 200px;
+}
+
+#crafts-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure even spacing between items */
+}
+  
+#main-header{
+    text-align: center;
+}
