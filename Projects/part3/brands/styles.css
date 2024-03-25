@@ -139,6 +139,30 @@ body {
 .brand {
     text-align: center;
 }
+.btn{
+    width: 60%;
+    margin: auto;
+}
+#brand-btn a{
+    text-decoration: none;
+    color: var(--section-border);
+}
+#brand-btn {
+    text-align: center;
+    background: var(--section-bg);
+    border: 2px solid var(--section-border);
+    border-radius: 20px;
+    height: 50px;
+    font-size: 25px;
+}
+button{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#brand-btn:hover {
+    background: var(--nav-hover);
+}
 
 
 
@@ -189,6 +213,10 @@ body {
     #content {
         margin-top: 75px;
         margin-bottom: 100px;
+    }
+    .btn{
+        width: 35%;
+        margin: auto;
     }
     
 }

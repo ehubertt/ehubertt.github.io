@@ -46,7 +46,7 @@ const getBrandSection = (brand) => {
     //add image section below name 
     const image = document.createElement("img");
     image.className = "images";
-    image.src = `images/${brand.main_image}`;
+    image.src = `${brand.main_image}`;
     brandSection.appendChild(image);
 
     //add description below image 

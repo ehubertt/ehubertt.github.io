@@ -12,7 +12,7 @@
             "Lip Balm",
             "Eye Creams"
         ],
-        "main_image": "glowrecipe.png"
+        "main_image": "images/glowrecipe.png"
     },
     {
         "_id": 2,
@@ -27,7 +27,7 @@
             "Facial Wash",
             "Shower Gel"
         ],
-        "main_image": "body.webp"
+        "main_image": "images/body.webp"
     },
     {
         "_id": 3,
@@ -42,7 +42,7 @@
             "Eye Care",
             "Korean Face Masks"
         ],
-        "main_image": "laniege.jpg"
+        "main_image": "images/laniege.jpg"
     },
     {
         "_id": 4,
@@ -56,7 +56,7 @@
             "Exfoliation",
             "Hair & Body Fragrance Mist"
         ],
-        "main_image": "oil.jfif"
+        "main_image": "images/oil.jfif"
     },
     {
         "_id": 5,
@@ -70,7 +70,7 @@
             "Watches",
             "Personalized Jewlery"
         ],
-        "main_image": "kendra.png"
+        "main_image": "images/kendra.png"
     },
     {
         "_id": 6,
@@ -84,7 +84,7 @@
             "Shorts & Skirts",
             "Polos and Button-Downs"
         ],
-        "main_image": "vuori.png"
+        "main_image": "images/vuori.png"
     },
     {
         "_id": 7,
@@ -98,7 +98,7 @@
             "Eyebrow products",
             "Makeup Brushes"
         ],
-        "main_image": "elf.png"
+        "main_image": "images/elf.png"
     },
     {
         "_id": 8,
@@ -112,7 +112,7 @@
             "Bracelets",
             "Anklets"
         ],
-        "main_image": "local.png"
+        "main_image": "images/local.png"
     }
 
 ]
