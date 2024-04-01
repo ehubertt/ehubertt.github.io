@@ -144,7 +144,6 @@ const showEmailResult = async(e) => {
         result.innerHTML = "Sorry, your email was not sent";
     }
   
-  
   };
   
   
@@ -202,7 +201,6 @@ const showEmailResult = async(e) => {
     brandBox.appendChild(favDiv);
     section.appendChild(brandBox);
     form.reset();
-    cancel();
   };
 
 document.getElementById("add-brand-form").onsubmit = showEmailResult;
