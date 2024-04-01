@@ -4,6 +4,7 @@
        <!-- Author: Emma Hubert -->
         <title>Hip-HQ</title>
         <link rel="stylesheet" href = "styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
 
     <body>
@@ -23,19 +24,94 @@
                         <li><a href="https://ehubertt.github.io/Projects/part3/creators/index.html">Creators</a></li>
                         <li><a href="https://ehubertt.github.io/Projects/part3/products/index.html">Products</a></li>
                         <li><a href="https://ehubertt.github.io/Projects/part3/brands/index.html">Brands</a></li>
-                        <li><a href="https://ehubertt.github.io/Projects/part3/favorites/index.html">Favorites</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/contactMe/index.html">Contact Me</a></li>
                     </ul>
                 </nav>
             </header>    
         </section> 
         <div id ="content">        
             <main id="main-content">
-                
+                <div id="dialog" class="w3-modal">
+                    <div class="w3-modal-content">
+                      <div class="w3-container">
+                        <span onclick="document.getElementById('dialog').style.display='none'"
+                        class="w3-button w3-display-topright">&times;</span>
+                          <section id="dialog-details">
+                            <form id="add-brand-form" method="post" class="hidden" action="https://api.web3forms.com/submit">
+                                <input
+                                    type="hidden"
+                                    name="access_key"
+                                    value="8abac557-3c25-49b6-882a-c081117b9f1c"
+                                />
+                                <section class="section1">
+                                    <section3>
+                                        <h2>Add One of Your Favorite Brands!</h2>
+                                        <p>
+                                            <label for="name ">Brand Name:</label>
+                                            <input type="text" id="name" name="name" required />
+                                        </p>
+                                        <p>
+                                            <label for="description">Description of the Brand and why you love it:</label>
+                                            <textarea type="text" id="description" name="description" minlength="20" required ></textarea>
+                                        </p>
+                                        <p id="products-p ">
+                                            <label class="inline">Products:</label>
+                                            <a href="#" id="add-product">Add Product</a>
+                                            <section id="product-boxes"></section>
+                                        </p>
+                                    </section3>
+                                    <section2 class="section2">
+                                        <p id="img-prev-section">
+                                            <img id="img-prev">
+                                        </p>
+                                        <p>
+                                            <label for="img" class="custom-file-input">
+                                                Select an Image of Brand
+                                            </label>
+                                            <input type="file" id="img" name="img" accept="images/*" class="hidden-file-input"/>
+                                        </p>
+                                    </section2>
+                                </section>
+                                <input
+                                    type="hidden"
+                                    name="redirect"
+                                    value="https://web3forms.com/success"
+                                />
+                                <input
+                                    type="hidden"
+                                    name="subject"
+                                    value="Contact from Hip HQ Website"
+                                />
+                                <input type="hidden" name="from_name" value="My Website" />
+                                <p class="checkbox">
+                                    <input type="checkbox" required name="terms" /><label
+                                    for="terms"
+                                    class="inline"
+                                    >I will allow my submission to be added.</label
+                                    >
+                                </p>
+                                <section class="cancel-save">
+                                    <p>
+                                        <button id="cancel" type="cancel">Cancel</button>
+                                    </p>
+                                    <p>
+                                        <button type="submit" id="submit">Submit</button>
+                                    </p>
+                                    <p id="result"></p>
+                                </section>
+                            </form>
+                        </section>
+                      </div>
+                    </div>
+                  </div> 
             </main>
             <section class="btn">
                 <button id="brand-btn" ><a href="https://ehubertt.github.io/Projects/part3/favorites/index.html">Click here to add a brand!</a>  </button>
+            </section>  
+            <h2 class="submissions-title" >Your Submissions:</h2>
+            <section id="brand-details">
+                             
             </section>
-            
         </div>
         <section id="foot">
             <section class="footer">

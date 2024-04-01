@@ -7,10 +7,9 @@
     --content-bg: #f7dfec; 
     --nav-hover: #F2C9E0;
     --nav-txt: #000;
-    --section-bg: #ccd6e0;
+    --section-bg: #d0e7f0;
     --section-border: #D96690;
     --img-border: #F28DB2;
-    --header-bg: #8896a3;
 }
 
 body {
@@ -19,13 +18,15 @@ body {
 }
 
 /* structure */ 
-#content {
+#content , #user-favorites{
     background: var(--content-bg); 
     border: 4px solid var(--section-border);
     padding: 5px;
     width: 80%; /* width of div across page*/
     margin: auto; /* center horizontally */
     border-radius: 15px; /* will round corners a little bit */
+    margin-top: 100px;
+    margin-bottom: 100px;
     
 }
 
@@ -105,167 +106,84 @@ body {
     margin-left: 20px;
     margin-bottom: 20px;
 }
-
-.hide-small {
-    display: none;
-}
 #hamburger:hover {
     background-color: var(--nav-hover);
 }
 
+.hide-small {
+    display: none;
+}
 
 
-/* Main Content */
-
-.name {
-    text-align: center;
+/* main content*/
+.contact-info{
+    border: 3px solid var(--section-border);
+    background: var(--section-bg);
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 29px; 
+}
+.contact-info h2{
+    width:30%;
+}
+h2{
     -webkit-text-stroke: 1px var(--section-border);
     color: var(--content-bg);
-    font-size: 30px;
-    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
-.images{
-    border-radius: 20px;
-    border: 4px solid var(--img-border);
-    width: 250px;
-    height:125px;
-}
-.brand {
-    border-radius: 20px;
-    background: var(--section-bg);
-    border: 3px solid var(--section-border);
-    color: var(--black);
-}
-.brand {
-    text-align: center;
-}
-.btn{
-    width: 60%;
-    margin: auto;
-}
-#brand-btn a{
-    text-decoration: none;
-    color: var(--section-border);
-}
-#brand-btn {
-    text-align: center;
-    background: var(--section-bg);
-    border: 2px solid var(--section-border);
-    border-radius: 20px;
-    height: 50px;
-    font-size: 25px;
-}
-button{
-    width: 100%;
-    margin: auto;
-    margin-bottom: 20px;
-}
-#brand-btn:hover {
-    background: var(--nav-hover);
-}
-.supply-box {
-    display:block;
-}
-.modal-image{
-    max-width: 300px;
-    max-height: 200px;
-    margin: 20px;
-  }
-  .cancel-save {
-    display: flex;
-    width: 100%;
-    margin: 20px;
-  }
-  .cancel-save p{
-    margin-right: 20px;
-  }
-  #cancel , #submit {
-    background-color: var(--img-border);
-    border: 2px solid black;
-    
-  }
-  
-  #cancel:hover {
-    background: lightgray;
-  }
-  #submit:hover {
-    background: lightgray;
-  }
-  .custom-file-input:hover {
-    background: lightgray;
-  }
-  
-  .section2{
-    flex: 40%;
-    max-width: 30%;
-    margin: 20px;
-  }
-  form {
-    font-size: 20px;
-  }
-  .hidden {
-    display: none;
-  }
-  #img-prev-section {
-    max-width: 400px;
-    height:300px;
-    margin: 20px;
-    background: lightgray;
-  }
-
-  #img-prev {
-    padding: 2.5%;
+form label{
     display: block;
-    margin: auto;
-    max-width: 95%;
-  }
-
-  .custom-file-input {
-    font-size: 15px;
-    background-color: var(--img-border);
-    border: 2px solid black;
-    cursor: pointer;
-    padding: 5px;
-    margin-left: 20px;
-    color: var(--black);
-  }
-  
-  .hidden-file-input {
-    display: none;
-  }
-  #brand-btn:hover {
-    cursor: pointer;
-    background: lightgray;
-  }
-
-.submissions-title {
-    text-align: center;
-    margin-top: 30px;
-    -webkit-text-stroke: 1px var(--section-border);
-    color: var(--img-border);
-    font-size: 30px;
-}
-
-.w3-modal-content {
-    border: 2px solid var(--section-border);
     color: var(--section-border);
-    
 }
-.w3-container {
+#contact-form p{
+    margin: 10px;
+}
+.contact{
+    width: 85%;
+    margin: auto;
+}
+input , textarea{
+    border: 2px solid var(--img-border);
+    width: 200px;
+    height: 50px;
+}
+button {
+    border: 2px solid var(--img-border);;
+    height: 60px;
+    width: 100px;
+    margin-top: 17px;
     background: var(--content-bg);
-    position: relative;
-  }
-#dialog {
-    margin-bottom: 30px;
+    color: var(--section-border);
 }
-#img-prev {
-    max-width: 100%;
-    max-height: 100%;
+button:hover {
+    background: var(--light-grey);
 }
+.contact-info h2{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.contact-info p{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+
 
 /* For larger resolutions */
 @media only screen and (min-width: 812px) {
-    
+    .columns1 {
+        display: flex;
+        width:80%;
+        margin:auto;
+        margin-top: 35px;
+    }
+    .columns{
+        display:flex;
+    }
     #nav-items{
         display:flex;
     }
@@ -277,17 +195,9 @@ button{
         text-align: center;
         margin:40px;
     }
-    .brand-box {
-        display:flex;
-        width: 60%;
-        margin: auto;
-    }
-    .brand {
-        width: 100%;
-        margin: 30px;
-        margin-left: 40px;
-        margin-right: 40px;
-        padding: 20px;
+    
+    .contact-info{
+        width: 90%;
     }
     #hamburger {
         display: none;
@@ -310,34 +220,21 @@ button{
         margin-top: 75px;
         margin-bottom: 100px;
     }
-    .btn{
-        width: 35%;
-        margin: auto;
+    #contact-form {
+        display: flex;
     }
-    #brand-details{
-        display: block;
-    }
-    textarea{
-        font-size: 20px;
-        height: 200px;
-        width: 600px;
-    }
-    
 }
 
 
 /* For smaller resolutions */
 @media only screen and (max-width: 812px) {
-    .brand {
-        margin: 20px;
-        padding: 20px;
+    
+    
+    .contact-info {
+        max-width: 80%;
     }
     #content {
         width:95%;
     }
-    .modal-image{
-        max-width: 20%;
-        margin: 20px;
-      }
     
 }
