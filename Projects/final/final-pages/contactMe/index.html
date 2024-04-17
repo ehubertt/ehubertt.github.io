@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- Author: Emma Hubert -->
+        <title>Hip-HQ</title>
+        <link rel="stylesheet" href = "styles.css">
+    </head>
+
+    <body>
+        <section class="head">
+            <section class="logo-img">
+                <img id="logo" src="images/logo.png">
+            </section>
+            <header id="header">
+                <nav id="main-nav">
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="https://ehubertt.github.io/Projects/part3/home/index.html">Home</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/creators/index.html">Creators</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/products/index.html">Products</a></li>
+                        <li><a href="https://brands-8k2h.onrender.com">Brands</a></li>
+                        <li><a href="https://ehubertt.github.io/Projects/part3/contactMe/index.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>    
+        </section> 
+        <div id ="content">
+            <main id="main-content">
+                <div class="contact-info">
+                    <h2>Contact me</h2>
+                    <p>Please feel free to contact me regarding any questions, concerns, or comments!</p>
+                    <section class="contact">
+                        <form
+                        id="contact-form"
+                        action="https://api.web3forms.com/submit"
+                        method="POST"
+                        >
+                        <input
+                          type="hidden"
+                          name="access_key"
+                          value="8abac557-3c25-49b6-882a-c081117b9f1c"
+                        />
+              
+                        <p>
+                          <label for="name">Name:</label>
+                          <input
+                            id="name"
+                            type="text"
+                            placeholder="first and last"
+                            name="name"
+                            required
+                          />
+                        </p>
+                        <p>
+                          <label for="email">Email:</label>
+                          <input id="email" type="email" name="email" required />
+                        </p>
+                        <p>
+                          <label for="message">Message:</label>
+                          <textarea id="message" name="message" required></textarea>
+                        </p>
+                        <input
+                          type="hidden"
+                          name="redirect"
+                          value="https://web3forms.com/success"
+                        />
+                        <input
+                          type="hidden"
+                          name="subject"
+                          value="Contact from Hip HQ Website"
+                        />
+                        <input type="hidden" name="from_name" value="My Website" />
+              
+                        <p>
+                          <button type="submit">Submit Form</button>
+                        </p>
+              
+                        <p id="result"></p>
+                      </form> 
+                    </section>
+                </div>
+
+            </main>
+        </div>        
+
+        <section id="foot">
+            <section class="footer">
+                <p>&copy; emmahubertt</p>
+        </section>
+    </body>
+    <script src="script.js"></script>
+</html>
